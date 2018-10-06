@@ -40,7 +40,9 @@
    ![1538733963670](https://github.com/Histra/FirstDemo/blob/master/1538733963670.png)
 
 8. 打开Input.jpg的属性界面，检查输出结果是否正确：
+
    ![1538734366523](https://github.com/Histra/FirstDemo/blob/master/1538734366523.png) 
+
    显然，结果正确。
 
 #### 实验中遇到的问题以及解决方法：
