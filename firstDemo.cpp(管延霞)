@@ -1,4 +1,4 @@
-// firstDemo.cpp : ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
+// firstDemo.cpp : å®šä¹‰æ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
 //
 
 #include "stdafx.h"
@@ -10,28 +10,28 @@ using namespace std;
 
 int main()
 {
-	//ÊäÈëÍ¼Ïñ
+	//è¾“å…¥å›¾åƒ
 	GDALDataset* posrc;
-	//Êä³öÍ¼Ïñ
+	//è¾“å‡ºå›¾åƒ
 	GDALDataset* podes;
 
-	//Í¼ÏñµÄ¿í¶ÈºÍ¸ß¶È
+	//å›¾åƒçš„å®½åº¦å’Œé«˜åº¦
 	int imgXlen, imgYlen;
-	//Í¼ÏñµÄÂ·¾¶
+	//å›¾åƒçš„è·¯å¾„
 	char *srcpath = "trees.jpg";
-	//Êä³öÍ¼ÏñµÄÂ·¾¶,Ö»ÄÜ±£´æÎªtifÀàĞÍµÄ
+	//è¾“å‡ºå›¾åƒçš„è·¯å¾„,åªèƒ½ä¿å­˜ä¸ºtifç±»å‹çš„
 	char *despath = "res,tif";
-	//Í¼ÏñÄÚ´æ´æ´¢
+	//å›¾åƒå†…å­˜å­˜å‚¨
 	GByte *buffTmp;
-	//Í¼Ïñ²¨¶ÎÊı
+	//å›¾åƒæ³¢æ®µæ•°
 	int i, bandNum;
 
-	//×¢²áÇı¶¯
+	//æ³¨å†Œé©±åŠ¨
 	GDALAllRegister();
-	//´ò¿ªÍ¼Ïñ
+	//æ‰“å¼€å›¾åƒ
 	posrc = (GDALDataset*)GDALOpenShared(srcpath, GA_ReadOnly);
 
-	//»ñÈ¡Í¼ÏñµÄ¿í¶È£¬¸ß¶ÈºÍ²¨¶ÎÊı
+	//è·å–å›¾åƒçš„å®½åº¦ï¼Œé«˜åº¦å’Œæ³¢æ®µæ•°
 	imgXlen = posrc->GetRasterXSize();
 	imgYlen = posrc->GetRasterYSize();
 	bandNum = posrc->GetRasterCount();
@@ -39,21 +39,21 @@ int main()
 	cout << "Image Y Length: " << imgYlen << endl;
 	cout << "Band number:" << bandNum << endl;
 
-	//¸ù¾İÍ¼Ïñ´óĞ¡½øĞĞ·ÖÅä¿Õ¼ä
+	//æ ¹æ®å›¾åƒå¤§å°è¿›è¡Œåˆ†é…ç©ºé—´
 	buffTmp = (GByte*)CPLMalloc(imgXlen*imgYlen * sizeof(GByte));
-	//´´½¨Êä³öÍ¼Ïñ
+	//åˆ›å»ºè¾“å‡ºå›¾åƒ
 	podes = GetGDALDriverManager()->GetDriverByName("GTiff")->Create(despath, imgXlen, imgYlen, bandNum, GDT_Byte, NULL);
 
-	//Ò»¸ö¸ö²¨¶ÎµÄÊäÈë£¬È»ºóÒ»¸ö¸ö²¨¶ÎµÄÊä³ö
+	//ä¸€ä¸ªä¸ªæ³¢æ®µçš„è¾“å…¥ï¼Œç„¶åä¸€ä¸ªä¸ªæ³¢æ®µçš„è¾“å‡º
 	for (i = 0; i < bandNum; i++)
 	{
 		posrc->GetRasterBand(i + 1)->RasterIO(GF_Read, 0, 0, imgXlen, imgYlen, buffTmp, imgXlen, imgYlen, GDT_Byte, 0, 0);
 		podes->GetRasterBand(i + 1)->RasterIO(GF_Read, 0, 0, imgXlen, imgYlen, buffTmp, imgXlen, imgYlen, GDT_Byte, 0, 0);
 		printf("... ... band %d processing ... ...\n", i);
 	}
-	//Çå³şÄÚ´æ
+	//æ¸…æ¥šå†…å­˜
 	CPLFree(buffTmp);
-	//¹Ø±Õdataset
+	//å…³é—­dataset
 	GDALClose(posrc);
 	GDALClose(podes);
 
