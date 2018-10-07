@@ -60,6 +60,9 @@ int main()
 	return 0;
 }
 ```
+3.实验结果
+
+![](https://wx1.sinaimg.cn/square/006zdbpcly1fw02783uhuj30eh06cwg2.jpg)
 ###三、收获
 1.` #pragma comment(lib, "gdal_i.lib")`
 	这句代码可以免去配环境的麻烦，并且可以轻松地在不同的环境下运行代码，方便项目合作
