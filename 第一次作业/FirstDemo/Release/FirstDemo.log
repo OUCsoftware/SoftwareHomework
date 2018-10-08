@@ -1,0 +1,15 @@
+﻿  FirstDemo.cpp
+FirstDemo.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+FirstDemo.cpp(42): warning C4244: “参数”: 从“double”转换到“::size_t”，可能丢失数据
+FirstDemo.cpp(44): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+FirstDemo.cpp(47): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+FirstDemo.cpp(48): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+FirstDemo.cpp(25): warning C4101: “i”: 未引用的局部变量
+    正在创建库 D:\Visual Studio\SoftwareEngineeringCode\FirstDemo_16020031075王刚\Release\FirstDemo.lib 和对象 D:\Visual Studio\SoftwareEngineeringCode\FirstDemo_16020031075王刚\Release\FirstDemo.exp
+  正在生成代码
+  0 of 430 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    4 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  FirstDemo.vcxproj -> D:\Visual Studio\SoftwareEngineeringCode\FirstDemo_16020031075王刚\Release\FirstDemo.exe
+  FirstDemo.vcxproj -> D:\Visual Studio\SoftwareEngineeringCode\FirstDemo_16020031075王刚\Release\FirstDemo.pdb (Full PDB)
