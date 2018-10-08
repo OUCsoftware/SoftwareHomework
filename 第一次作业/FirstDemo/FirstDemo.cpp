@@ -54,6 +54,6 @@ int main()
 	GDALClose(poDstDs);
 
 	system("pause");
-	return 0;
+    return 0;
 }
 
