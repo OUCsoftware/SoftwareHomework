@@ -1,14 +1,4 @@
-﻿  stdafx.cpp
-d:\visual studio\softwareengineeringcode\firstdemo\stdafx.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-d:\visual studio\softwareengineeringcode\firstdemo\stdafx.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-d:\visual studio\softwareengineeringcode\firstdemo\targetver.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  FirstDemo.cpp
+﻿  FirstDemo.cpp
 d:\visual studio\softwareengineeringcode\firstdemo\firstdemo.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-d:\visual studio\softwareengineeringcode\firstdemo\firstdemo.cpp(42): warning C4244: “参数”: 从“double”转换到“::size_t”，可能丢失数据
-d:\visual studio\softwareengineeringcode\firstdemo\firstdemo.cpp(44): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-d:\visual studio\softwareengineeringcode\firstdemo\firstdemo.cpp(47): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-d:\visual studio\softwareengineeringcode\firstdemo\firstdemo.cpp(48): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-d:\visual studio\softwareengineeringcode\firstdemo\firstdemo.cpp(25): warning C4101: “i”: 未引用的局部变量
-    正在创建库 D:\Visual Studio\SoftwareEngineeringCode\FirstDemo\Debug\FirstDemo.lib 和对象 D:\Visual Studio\SoftwareEngineeringCode\FirstDemo\Debug\FirstDemo.exp
   FirstDemo.vcxproj -> D:\Visual Studio\SoftwareEngineeringCode\FirstDemo\Debug\FirstDemo.exe
   FirstDemo.vcxproj -> D:\Visual Studio\SoftwareEngineeringCode\FirstDemo\Debug\FirstDemo.pdb (Partial PDB)
