@@ -1,0 +1,9 @@
+﻿  main.cpp
+f:\junior3\c++\temp\project3\main.cpp(19): warning C4101: “buffTmp”: 未引用的局部变量
+    正在创建库 F:\junior3\c++\temp\Project3\Release\Project3.lib 和对象 F:\junior3\c++\temp\Project3\Release\Project3.exp
+  正在生成代码
+  1 of 438 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  Project3.vcxproj -> F:\junior3\c++\temp\Project3\Release\Project3.exe
