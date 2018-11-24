@@ -1,0 +1,5 @@
+﻿  homework4.cpp
+s:\softwareengineering\homework4\homework4.cpp(275): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+    正在创建库 S:\softwareEngineering\homework4\Debug\homework4.lib 和对象 S:\softwareEngineering\homework4\Debug\homework4.exp
+  homework4.vcxproj -> S:\softwareEngineering\homework4\Debug\homework4.exe
+  homework4.vcxproj -> S:\softwareEngineering\homework4\Debug\homework4.pdb (Full PDB)
