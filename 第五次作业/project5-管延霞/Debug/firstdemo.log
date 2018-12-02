@@ -1,0 +1,5 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (firstdemo.vcxproj, project2.vcxproj, project3.vcxproj, project4.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  project5.cpp
+d:\subject\软件工程\code\project5-管延霞\project5.cpp(26): warning C4101: “l”: 未引用的局部变量
+  firstdemo.vcxproj -> D:\subject\软件工程\code\project5-管延霞\Debug\project5.exe
+  firstdemo.vcxproj -> D:\subject\软件工程\code\project5-管延霞\Debug\project5.pdb (Full PDB)
