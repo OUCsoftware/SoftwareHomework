@@ -1,0 +1,5 @@
+﻿  homework6.cpp
+s:\softwareengineering\homework6\homework6.cpp(129): warning C4101: “l”: 未引用的局部变量
+    正在创建库 S:\softwareEngineering\homework6\Debug\homework6.lib 和对象 S:\softwareEngineering\homework6\Debug\homework6.exp
+  homework6.vcxproj -> S:\softwareEngineering\homework6\Debug\homework6.exe
+  homework6.vcxproj -> S:\softwareEngineering\homework6\Debug\homework6.pdb (Full PDB)
