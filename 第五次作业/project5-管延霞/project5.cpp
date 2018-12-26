@@ -1,6 +1,3 @@
-// project2.cpp : 定义控制台应用程序的入口点。
-//
-
 #include "stdafx.h"
 #include<iostream>
 #include "./gdal/gdal_priv.h"
@@ -12,18 +9,10 @@ int main()
 	GDALDataset* posrc1, *posrc2;
 	//输出图像
 	GDALDataset* podes1;
-	//RGB == > IHS 正变换矩阵
-	/*double tran1[3][3] = {{1 / 3, 1 / 3, 1 / 3},
-	{-sqrt(2) / 6, -sqrt(2) / 6, sqrt(2) / 3},
-	{1 / sqrt(2), -1 / sqrt(2), 0}};*/
-	// IHS == > RGB 逆变换矩阵
-	/*double tran2[3][3] = { {1, -1 / sqrt(2), 1 / sqrt(2)},
-	{1, -1 / sqrt(2), -1 / sqrt(2)},
-	{1, sqrt(2), 0} };*/
-	//图像的宽度和高度
+	
 	int imgXlen, imgYlen,bandNum;
 	//图像的路径
-	int i, j, l;
+	int i, j;
 	//输出图像的路径,只能保存为tif类型的
 	char *despath = "1.tif";
     
