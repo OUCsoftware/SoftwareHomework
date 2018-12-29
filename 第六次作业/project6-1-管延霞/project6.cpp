@@ -82,6 +82,29 @@ int main()
 		n++;
 
 	}
+	int mode = imgYlen % 256;
+	int start = imgYlen - mode;
+	for (i = 0; i < bandNum; i++)
+	{
+		posrc1->GetRasterBand(i + 1)->RasterIO(GF_Read, 0, start, imgXlen, mode, bufftmp[i], imgXlen, mode, GDT_Float32, 0, 0);
+	}
+
+	posrc2->GetRasterBand(1)->RasterIO(GF_Read, 0, start, imgXlen, mode, bufftmp2, imgXlen,mode, GDT_Float32, 0, 0);
+	for (i = 0; i < imgXlen * mode; i++)
+	{
+		bufftmpH[i] = -sqrt(2.0f) / 6.0f* bufftmp[0][i] - sqrt(2.0f) / 6.0f*bufftmp[1][i] + sqrt(2.0f) / 3.0f*bufftmp[2][i];
+		bufftmpS[i] = 1.0f / sqrt(2.0f)* bufftmp[0][i] - 1 / sqrt(2.0f)*bufftmp[1][i];
+
+		bufftmp[0][i] = bufftmp2[i] - 1.0f / sqrt(2.0f)*bufftmpH[i] + 1.0f / sqrt(2.0f)*bufftmpS[i];
+		bufftmp[1][i] = bufftmp2[i] - 1.0f / sqrt(2.0f)*bufftmpH[i] - 1.0f / sqrt(2.0f)*bufftmpS[i];
+		bufftmp[2][i] = bufftmp2[i] + sqrt(2.0f)*bufftmpH[i];
+
+	}
+
+	for (i = 0; i < 3; i++)
+	{
+		podes1->GetRasterBand(i + 1)->RasterIO(GF_Write, 0, start, imgXlen, mode, bufftmp[i], imgXlen, mode, GDT_Float32, 0, 0);
+	}
 	cout << "123" << endl;
 
 	//ÇåÀíÄÚ´æ
