@@ -1,0 +1,13 @@
+﻿  Demo_6_2.cpp
+c:\users\小西\desktop\软件工程\demo_6\demo_6\demo_6_2.cpp(84): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\小西\desktop\软件工程\demo_6\demo_6\demo_6_2.cpp(85): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\小西\desktop\软件工程\demo_6\demo_6\demo_6_2.cpp(88): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\小西\desktop\软件工程\demo_6\demo_6\demo_6_2.cpp(89): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\小西\desktop\软件工程\demo_6\demo_6\demo_6_2.cpp(90): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\小西\desktop\软件工程\demo_6\demo_6\demo_6_2.cpp(127): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\小西\desktop\软件工程\demo_6\demo_6\demo_6_2.cpp(128): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\小西\desktop\软件工程\demo_6\demo_6\demo_6_2.cpp(131): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\小西\desktop\软件工程\demo_6\demo_6\demo_6_2.cpp(132): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\小西\desktop\软件工程\demo_6\demo_6\demo_6_2.cpp(133): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+    正在创建库 C:\Users\小西\Desktop\软件工程\Demo_6\Debug\Demo_6.lib 和对象 C:\Users\小西\Desktop\软件工程\Demo_6\Debug\Demo_6.exp
+  Demo_6.vcxproj -> C:\Users\小西\Desktop\软件工程\Demo_6\Debug\Demo_6.exe
